@@ -37,3 +37,18 @@ class Planeta():
             return float(2*np.pi*np.sqrt((self._a**3)/(g*self._masaplanetaria)))
         else:
             return 0
+        
+    def velocidad_escape(self,g):
+        """
+        Calcula y devuelve la velocidad de escape del planeta.
+        
+        Parámetros:
+        - g: La constante gravitacional.
+        
+        Retorna:
+        - La velocidad de escape del planeta como un número de punto flotante.
+        """
+        if self._masaplanetaria != 0 and self._radio != 0:
+            return float(np.sqrt(2*g*self._masaplanetaria/self._radio))
+        else:
+            return 0

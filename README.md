@@ -1,5 +1,5 @@
 # **Data Challenge 3**
-Este repositorio busca profundizar en los conceptos principales de Git a través de la colaboración en un proyecto de software existente que simula eventos astronómicos utilizando programación orientada a objetos. Este challenge est ́a dise ̃nado para que los estudiantes de astrofísica con mención en ciencia de datos apliquen y evalúen sus habilidades en control de versiones en un contexto de desarrollo colaborativo.
+Este repositorio busca profundizar en los conceptos principales de Git a través de la colaboración en un proyecto de software existente que simula eventos astronómicos utilizando programación orientada a objetos. Este challenge está diseñado para que los estudiantes de astrofísica con mención en ciencia de datos apliquen y evalúen sus habilidades en control de versiones en un contexto de desarrollo colaborativo.
 
 ## **Documentación de Clases y funciones**:
 

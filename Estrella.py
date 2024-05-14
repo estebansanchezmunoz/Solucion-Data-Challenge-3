@@ -40,3 +40,16 @@ class Estrella():
         - La luminosidad de la estrella en la secuencia principal.
         """
         return  float( l_sol * (self._masa/m_sol)**3.5)
+    
+    def radio_schwarzschild(self,g,c):
+        """
+        Calcula el radio de Schwarzschild de la estrella.
+
+        Parámetros:
+        - g: La constante de gravitación universal.
+        - c: La velocidad de la luz.
+
+        Returns:
+        - El radio de Schwarzschild de la estrella.
+        """
+        return float(2 * g * self._masa / (c**2))

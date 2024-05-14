@@ -1,3 +1,10 @@
+import Estrella
+import Planeta
+import PlanetaExoplanetario
+import SistemaPlanetario
+import SistemaJerarquico
+
+
 def crear_estrella(data, nombre_estrella):
     """
     Crea una instancia de la clase Estrella a partir de los datos de una estrella y su nombre.

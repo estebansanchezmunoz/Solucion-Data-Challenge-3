@@ -2,6 +2,13 @@
 import numpy as np
 import pandas as pd 
 import string
+import Estrella
+import Planeta
+import PlanetaExoplanetario
+import SistemaPlanetario
+import SistemaJerarquico
+import funciones_utiles
+
 
 #Declaración de constantes
 l_sol = 3.828e26  # Luminosidad del Sol [Watts]
@@ -18,21 +25,21 @@ data_limpio['star_alternate_names'] = data_limpio['star_alternate_names'].replac
 
 #Creamos las instancias de cada estrella.
 
-estrella_HR8799 = crear_estrella(data_limpio, "HR 8799")
-estrella_HD202206 = crear_estrella(data_limpio, "HD 202206 ")
-estrella_TRAPPIST1 = crear_estrella(data_limpio, "TRAPPIST-1")
-estrella_TOI1338 = crear_estrella(data_limpio, "TOI-1338")
-estrella_HD188753 = crear_estrella(data_limpio, "HD 188753")
-estrella_Kepler451 = crear_estrella(data_limpio, "Kepler-451")
-estrella_Kepler16 = crear_estrella(data_limpio, "Kepler-16 ")
+estrella_HR8799 = funciones_utiles.crear_estrella(data_limpio, "HR 8799")
+estrella_HD202206 = funciones_utiles.crear_estrella(data_limpio, "HD 202206 ")
+estrella_TRAPPIST1 = funciones_utiles.crear_estrella(data_limpio, "TRAPPIST-1")
+estrella_TOI1338 = funciones_utiles.crear_estrella(data_limpio, "TOI-1338")
+estrella_HD188753 = funciones_utiles.crear_estrella(data_limpio, "HD 188753")
+estrella_Kepler451 = funciones_utiles.crear_estrella(data_limpio, "Kepler-451")
+estrella_Kepler16 = funciones_utiles.crear_estrella(data_limpio, "Kepler-16 ")
 
 #Creación de sistemas planetarios a partir de la base de datos utilizando función *crear_sistema* en base a la estrellla principal
-sistema_HR8799 = crear_sistema(data_limpio, estrella_HR8799)
-sistema_HD202206 = crear_sistema(data_limpio, estrella_HD202206)
-sistema_TRAPPIST1 = crear_sistema(data_limpio, estrella_TRAPPIST1)
-sistema_TOI1338 = crear_sistema(data_limpio, estrella_TOI1338)
-sistema_Kepler451 = crear_sistema(data_limpio, estrella_Kepler451)
-sistema_Kepler16 = crear_sistema(data_limpio, estrella_Kepler16)
+sistema_HR8799 = funciones_utiles.crear_sistema(data_limpio, estrella_HR8799)
+sistema_HD202206 = funciones_utiles.crear_sistema(data_limpio, estrella_HD202206)
+sistema_TRAPPIST1 = funciones_utiles.crear_sistema(data_limpio, estrella_TRAPPIST1)
+sistema_TOI1338 = funciones_utiles.crear_sistema(data_limpio, estrella_TOI1338)
+sistema_Kepler451 = funciones_utiles.crear_sistema(data_limpio, estrella_Kepler451)
+sistema_Kepler16 = funciones_utiles.crear_sistema(data_limpio, estrella_Kepler16)
 
 #Creación de sistema jerárquico
 #Utilizando 2 sistemas planetarios, los uniremos para crear a mano un sistema jerárquico.

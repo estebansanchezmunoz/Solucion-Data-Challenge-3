@@ -1,3 +1,4 @@
+from Planeta import Planeta
 class PlanetaExoplanetario(Planeta):
     """
     Clase que representa un planeta exoplanetario, es decir, un planeta con una estrella anfitriona que no es el Sol.
